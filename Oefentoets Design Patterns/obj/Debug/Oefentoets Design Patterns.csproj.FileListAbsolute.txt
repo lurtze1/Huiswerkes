@@ -1,0 +1,6 @@
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\bin\Debug\Oefentoets Design Patterns.exe.config
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\bin\Debug\Oefentoets Design Patterns.exe
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\bin\Debug\Oefentoets Design Patterns.pdb
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\obj\Debug\Oefentoets Design Patterns.csprojResolveAssemblyReference.cache
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\obj\Debug\Oefentoets Design Patterns.exe
+C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Oefentoets Design Patterns\obj\Debug\Oefentoets Design Patterns.pdb

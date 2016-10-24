@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huiswerk", "Huiswerk\Huiswerk.csproj", "{3334D924-739B-4EF3-8B85-069F2913AAE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AD", "ConsoleApplication1\AD.csproj", "{847B7B52-6DC7-4F7F-8F77-0C95C3E21092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefentoets Design Patterns", "Oefentoets Design Patterns\Oefentoets Design Patterns.csproj", "{B0C88580-9186-43B7-83F7-5D129FCC2864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3334D924-739B-4EF3-8B85-069F2913AAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3334D924-739B-4EF3-8B85-069F2913AAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3334D924-739B-4EF3-8B85-069F2913AAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3334D924-739B-4EF3-8B85-069F2913AAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847B7B52-6DC7-4F7F-8F77-0C95C3E21092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847B7B52-6DC7-4F7F-8F77-0C95C3E21092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847B7B52-6DC7-4F7F-8F77-0C95C3E21092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847B7B52-6DC7-4F7F-8F77-0C95C3E21092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C88580-9186-43B7-83F7-5D129FCC2864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C88580-9186-43B7-83F7-5D129FCC2864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C88580-9186-43B7-83F7-5D129FCC2864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C88580-9186-43B7-83F7-5D129FCC2864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
