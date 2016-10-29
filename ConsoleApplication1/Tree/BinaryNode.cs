@@ -1,12 +1,15 @@
-﻿namespace AD
-{
-    public class BinaryNode
-    {
-        public int? Element;
-        public BinaryNode Left;
-        public BinaryNode Right;
+﻿using System;
 
-        public BinaryNode(int data)
+namespace AD
+{
+    public class BinaryNode<T> where T : IComparable
+    {
+        public T Element;
+        public int Height = 0;
+        public BinaryNode<T> Left;
+        public BinaryNode<T> Right;
+
+        public BinaryNode(T data)
         {
             Element = data;
         }

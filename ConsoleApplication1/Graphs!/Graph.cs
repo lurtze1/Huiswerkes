@@ -13,7 +13,7 @@ namespace ConsoleApplication1
         private Vertex GetVertex(string vertexName)
         {
             Vertex v;
-            if (_vertexMap[vertexName] == null)
+            if (!_vertexMap.ContainsKey(vertexName))
             {
                 v = new Vertex(vertexName);
                 _vertexMap.Add(vertexName, v);
@@ -80,7 +80,7 @@ namespace ConsoleApplication1
             Queue<Vertex> q = new Queue<Vertex>();
             start.Dist = 0;
             q.Enqueue(start);
-            while (q.Peek() != null)
+            while (q.Count != 0)
             {
                 var v = q.Dequeue();
 

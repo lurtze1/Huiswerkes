@@ -54,18 +54,21 @@ public class MyArrayList implements SimpleArrayList {
     //O(n)
     @Override
     public void print() {
+        System.out.print("[");
         for (Integer nummer : internalArray) {
             if (nummer != null) {
                 System.out.print(nummer + ",");
             }
-            System.out.println("");
+
         }
+        System.out.print("]");
+        System.out.println("");
     }
 
     //O(c)
     @Override
     public void clear() {
-        internalArray = new Integer[internalArray.length];
+        this.internalArray = new Integer[internalArray.length];
     }
 
     //O(n)
@@ -79,7 +82,8 @@ public class MyArrayList implements SimpleArrayList {
         }
         return counter;
     }
-    public void InsertionSort(){
+
+    public void InsertionSort() {
         Integer[] sortedArray = new Integer[internalArray.length];
     }
 }

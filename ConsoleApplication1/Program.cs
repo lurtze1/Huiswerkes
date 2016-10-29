@@ -1,4 +1,5 @@
-﻿using ConsoleApplication1;
+﻿using System;
+using ConsoleApplication1;
 
 namespace AD
 {
@@ -6,7 +7,7 @@ namespace AD
     {
         private static void Main(string[] args)
         {
-            /*// Create an unsorted array of string elements
+            // Create an unsorted array of string elements
             string[] unsorted = {"z", "e", "", "x", "c", "m", "q", "a", "b", "c", "d", "9", "11", "33"};
 
             // Print the unsorted array
@@ -26,11 +27,11 @@ namespace AD
 
             Console.WriteLine();
 
-            Console.ReadLine();*/
+            Console.ReadLine();
 
             //Note make better version that works backwards :P
 
-            /*var tree = new BinaryTree();
+            var tree = new BinaryTree<int>();
 
             tree.Insert(5);
             tree.Insert(3);
@@ -40,13 +41,8 @@ namespace AD
             Console.WriteLine("----------------");
             tree.PreOrderPrint();
             Console.WriteLine("----------------");
-            tree.PostOrderPrint();*/
-            var queue = new PriorityQueue();
-            queue.Add(101010);
-            queue.Add(100);
-            queue.Add(7);
-            queue.Add(9);
-            queue.Add(6);
+            tree.PostOrderPrint();
+            var queue = new PriorityQueue {101010, 100, 7, 9, 6};
             queue.PreOrderPrint();
             queue.remove();
             queue.PreOrderPrint();
@@ -62,6 +58,20 @@ namespace AD
             g.AddEdge("Adrian", "Tank", 5);
 
             g.Unweighted("Henk");
+
+            AvlTree<int> avlTree = new AvlTree<int>();
+            avlTree.Add(2);
+            avlTree.Add(1);
+            avlTree.Add(0);
+            avlTree.Add(-1);
+            avlTree.Add(-2);
+            avlTree.Add(3);
+            avlTree.Add(5);
+            avlTree.Add(4);
+
+            avlTree.DisplayTree();
+
+            Console.ReadLine();
         }
     }
 }

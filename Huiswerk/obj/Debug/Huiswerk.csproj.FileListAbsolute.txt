@@ -4,3 +4,9 @@ C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Huiswerk\bin\Deb
 C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Huiswerk\obj\Debug\Huiswerk.exe
 C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Huiswerk\obj\Debug\Huiswerk.pdb
 C:\Users\lurtze1\documents\visual studio 2015\Projects\Huiswerk\Huiswerk\obj\Debug\Huiswerk.csprojResolveAssemblyReference.cache
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\bin\Debug\Huiswerk.exe.config
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\bin\Debug\Huiswerk.exe
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\bin\Debug\Huiswerk.pdb
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\obj\Debug\Huiswerk.csprojResolveAssemblyReference.cache
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\obj\Debug\Huiswerk.exe
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\Huiswerk\obj\Debug\Huiswerk.pdb

@@ -2,32 +2,32 @@
 
 namespace AD
 {
-    public class BinaryTree
+    public class BinaryTree<T> where T : IComparable
     {
-        protected BinaryNode Root;
+        protected BinaryNode<T> Root;
 
         public BinaryTree()
         {
             Root = null;
         }
 
-        private int? ElementAt(BinaryNode t)
+        private T ElementAt(BinaryNode<T> t)
         {
-            return t == null ? null : t.Element;
+            return t.Element;
         }
 
-        public int? Find(int x)
+        public T Find(T x)
         {
             return ElementAt(Find(x, Root));
         }
 
 
-        public void Insert(int x)
+        public void Insert(T x)
         {
             Root = Insert(x, Root);
         }
 
-        public void Remove(int x)
+        public void Remove(T x)
         {
             Root = Remove(x, Root);
         }
@@ -37,12 +37,12 @@ namespace AD
             Root = RemoveMin(Root);
         }
 
-        public int? FindMin()
+        public T FindMin()
         {
             return ElementAt(FindMin(Root));
         }
 
-        public int? FindMax()
+        public T FindMax()
         {
             return ElementAt(FindMax(Root));
         }
@@ -57,15 +57,15 @@ namespace AD
             return Root == null;
         }
 
-        private BinaryNode Find(int x, BinaryNode t)
+        private BinaryNode<T> Find(T x, BinaryNode<T> t)
         {
             while (t != null)
             {
-                if (x < t.Element)
+                if (x.CompareTo(t.Element) < 0)
                 {
                     t = t.Left;
                 }
-                else if (x > t.Element)
+                else if (x.CompareTo(t.Element) > 0)
                 {
                     t = t.Right;
                 }
@@ -78,7 +78,7 @@ namespace AD
         }
 
 
-        private BinaryNode FindMin(BinaryNode t)
+        private BinaryNode<T> FindMin(BinaryNode<T> t)
         {
             if (t != null)
             {
@@ -90,7 +90,7 @@ namespace AD
             return t;
         }
 
-        private BinaryNode FindMax(BinaryNode t)
+        private BinaryNode<T> FindMax(BinaryNode<T> t)
         {
             if (t != null)
             {
@@ -102,17 +102,17 @@ namespace AD
             return t;
         }
 
-        private BinaryNode Insert(int x, BinaryNode t)
+        private BinaryNode<T> Insert(T x, BinaryNode<T> t)
         {
             if (t == null)
             {
-                t = new BinaryNode(x);
+                t = new BinaryNode<T>(x);
             }
-            else if (x < t.Element)
+            else if (x.CompareTo(t.Element) < 0)
             {
                 t.Left = Insert(x, t.Left);
             }
-            else if (x > t.Element)
+            else if (x.CompareTo(t.Element) > 0)
             {
                 t.Right = Insert(x, t.Right);
             }
@@ -123,7 +123,7 @@ namespace AD
             return t;
         }
 
-        protected BinaryNode RemoveMin(BinaryNode t)
+        protected BinaryNode<T> RemoveMin(BinaryNode<T> t)
         {
             if (t == null)
             {
@@ -137,17 +137,17 @@ namespace AD
             return t.Right;
         }
 
-        protected BinaryNode Remove(int x, BinaryNode t)
+        protected BinaryNode<T> Remove(T x, BinaryNode<T> t)
         {
             if (t == null)
             {
                 throw new ArgumentException(t.ToString());
             }
-            if (x < t.Element)
+            if (x.CompareTo(t.Element) < 0)
             {
                 t.Left = Remove(x, t.Left);
             }
-            else if (x > t.Element)
+            else if (x.CompareTo(t.Element) < 0)
             {
                 t.Right = Remove(x, t.Right);
             }
@@ -178,7 +178,7 @@ namespace AD
             Console.WriteLine(PostOrderPrint(Root));
         }
 
-        private string PreOrderPrint(BinaryNode t)
+        private string PreOrderPrint(BinaryNode<T> t)
         {
             string result = "";
             result += t.Element + ", ";
@@ -193,7 +193,7 @@ namespace AD
             return result;
         }
 
-        private string InOrderPrint(BinaryNode t)
+        private string InOrderPrint(BinaryNode<T> t)
         {
             string result = "";
 
@@ -209,7 +209,7 @@ namespace AD
             return result;
         }
 
-        private string PostOrderPrint(BinaryNode t)
+        private string PostOrderPrint(BinaryNode<T> t)
         {
             string result = "";
 
