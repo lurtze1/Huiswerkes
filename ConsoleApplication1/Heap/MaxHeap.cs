@@ -1,22 +1,23 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ConsoleApplication1.Heap
 {
-    internal class MaxHeap<T> : Queue<T> where T : IComparable<T>
+    internal class MaxHeap : Queue 
     {
         private static readonly int _defaultCapacity = 100;
-        private T[] _array;
+        private int[] _array;
         private int _currentSize;
 
         public MaxHeap()
         {
             _currentSize = 0;
-            _array = new T[_defaultCapacity + 1];
+            _array = new int[_defaultCapacity + 1];
         }
 
-        public MaxHeap(Queue<T> queueueue)
+        public MaxHeap(Queue<int> queueueue)
         {
             _currentSize = queueueue.Count;
             PercolateUp(++_currentSize);
@@ -28,7 +29,7 @@ namespace ConsoleApplication1.Heap
             return _currentSize;
         }
 
-        public void InsertArray(T[] newarray)
+        public void InsertArray(int[] newarray)
         {
             _array = newarray;
             _currentSize = _array.Length;
@@ -38,12 +39,12 @@ namespace ConsoleApplication1.Heap
             _currentSize = 0;
         }
 
-        private int compare(T lhs, T rhs)
+        private int compare(int lhs, int rhs)
         {
             return lhs.CompareTo(rhs);
         }
 
-        public T Element()
+        public int Element()
         {
             if (!_array.Any())
             {
@@ -52,7 +53,7 @@ namespace ConsoleApplication1.Heap
             return _array[1];
         }
 
-        public bool Add(T x)
+        public bool Add(int x)
         {
             if (_currentSize + 1 == _array.Length)
             {
@@ -69,12 +70,12 @@ namespace ConsoleApplication1.Heap
             return true;
         }
 
-        public T FindMax()
+        public int FindMax()
         {
             return _array[1];
         }
 
-        public T Remove()
+        public int Remove()
         {
             var minItem = Element();
             _array[1] = _array[_currentSize--];
@@ -117,9 +118,9 @@ namespace ConsoleApplication1.Heap
 
         private void DoubleArray()
         {
-            T[] newArray;
+            int[] newArray;
 
-            newArray = new T[_array.Length*2];
+            newArray = new int[_array.Length*2];
             for (int i = 0; i < _array.Length; i++)
             {
                 newArray[i] = _array[i];
@@ -159,7 +160,7 @@ namespace ConsoleApplication1.Heap
 
         public bool IsMaxHeap()
         {
-            T Root = FindMax();
+            int Root = FindMax();
             if (Root.Equals(IsMaxHeap(1)))
             {
                 return true;
@@ -167,9 +168,9 @@ namespace ConsoleApplication1.Heap
             return false;
         }
 
-        private T IsMaxHeap(int hole)
+        private int IsMaxHeap(int hole)
         {
-            T result = _array[hole];
+            int result = _array[hole];
             if ((hole >= 0) && (hole <= _currentSize/2 -1))
             {
 
@@ -188,6 +189,11 @@ namespace ConsoleApplication1.Heap
 
         public bool IsComplete()
         {
+            for (int i = 1; i < _array.Length - 1; i++)
+            {
+                if (_array[i] == 0 && _array[(i + 1)] != 0)
+                    return false;
+            }
             return true;
         }
     }

@@ -50,14 +50,14 @@ namespace ConsoleApplication1
              tree2.Insert(2);
              Console.WriteLine(tree2.GeefEenNaKleinsteElement().Element);*/
 
-            MaxHeap<int> queue = new MaxHeap<int>();
+            MaxHeap queue = new MaxHeap();
             queue.Add(10);
             queue.Add(100);
             queue.Add(12);
             queue.Add(5);
             queue.PreOrderPrint();
             Console.WriteLine(queue.IsMaxHeap());
-            MaxHeap<int> queue2 = new MaxHeap<int>();
+            MaxHeap queue2 = new MaxHeap();
             int[] ArrayOne = new int[20];
             ArrayOne[1] = 10;
             ArrayOne[2] = 4;
@@ -73,11 +73,11 @@ namespace ConsoleApplication1
             ArrayTwo[3] = 11;
             ArrayTwo[7] = 7;
             ArrayTwo[6] = 10;
+            ArrayTwo[15] = 17;
 
-            queue2.InsertArray(ArrayOne);
-            Console.WriteLine(queue2.IsMaxHeap());
             queue2.InsertArray(ArrayTwo);
             Console.WriteLine(queue2.IsMaxHeap());
+            Console.WriteLine(queue2.IsComplete());
         }
     }
 }
