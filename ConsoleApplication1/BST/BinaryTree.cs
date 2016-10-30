@@ -248,7 +248,7 @@ namespace ConsoleApplication1
                 }
                 return currentParent;
             }
-            else if (current.Right != null)
+            if (current.Right != null)
             {
                 current = current.Right;
                 while (current.Left != null)
@@ -257,10 +257,7 @@ namespace ConsoleApplication1
                 }
                 return current;
             }
-            else
-            {
                 return current;
-            }
         }
     }
 }

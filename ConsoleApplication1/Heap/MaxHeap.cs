@@ -28,6 +28,11 @@ namespace ConsoleApplication1.Heap
             return _currentSize;
         }
 
+        public void InsertArray(T[] newarray)
+        {
+            _array = newarray;
+            _currentSize = _array.Length;
+        }
         public new void Clear()
         {
             _currentSize = 0;
@@ -64,7 +69,7 @@ namespace ConsoleApplication1.Heap
             return true;
         }
 
-        public T FindMin()
+        public T FindMax()
         {
             return _array[1];
         }
@@ -153,6 +158,35 @@ namespace ConsoleApplication1.Heap
         }
 
         public bool IsMaxHeap()
+        {
+            T Root = FindMax();
+            if (Root.Equals(IsMaxHeap(1)))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private T IsMaxHeap(int hole)
+        {
+            T result = _array[hole];
+            if ((hole >= 0) && (hole <= _currentSize/2 -1))
+            {
+
+                if (result.CompareTo(IsMaxHeap(hole * 2)) < 0)
+                {
+                    result = _array[hole*2];
+                }
+                if (result.CompareTo(IsMaxHeap((hole*2) + 1)) < 0)
+                {
+                    result = _array[(hole * 2) + 1];
+                }
+
+            }
+            return result;
+        }
+
+        public bool IsComplete()
         {
             return true;
         }
