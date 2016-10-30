@@ -1,0 +1,14 @@
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave3\bin\Debug\Opgave3.exe.config
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave3\bin\Debug\Opgave3.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave3\bin\Debug\Opgave3.pdb
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave3\obj\Debug\Opgave3.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave3\obj\Debug\Opgave3.pdb
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\bin\Debug\Opgave3.exe.config
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\obj\Debug\Opgave3.exe
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\obj\Debug\Opgave3.pdb
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\bin\Debug\Opgave3.exe
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\bin\Debug\Opgave3.pdb
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave3\obj\Debug\Opgave3.csprojResolveAssemblyReference.cache
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\AD OefenTentamen\Opgave3\bin\Debug\Opgave3.exe.config
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\AD OefenTentamen\Opgave3\obj\Debug\Opgave3.exe
+C:\Users\lurtze1\Documents\Visual Studio 2015\Projects\Huiswerkes\AD OefenTentamen\Opgave3\obj\Debug\Opgave3.pdb

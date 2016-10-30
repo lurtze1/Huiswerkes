@@ -1,0 +1,8 @@
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave4\bin\Debug\Opgave4.exe.config
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave4\bin\Debug\Opgave4.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave4\bin\Debug\Opgave4.pdb
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave4\obj\Debug\Opgave4.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave4\obj\Debug\Opgave4.pdb
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave4\bin\Debug\Opgave4.exe.config
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave4\obj\Debug\Opgave4.exe
+C:\Users\rick_\Dropbox\Y3P1\AD OefenTentamen\Opgave4\obj\Debug\Opgave4.pdb

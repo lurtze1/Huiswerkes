@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ConsoleApplication1.Heap
 {
-    internal class MaxHeap<T> : Queue<T> where T : IComparable<T>
+    public class MaxHeap<T> : Queue<T> where T : IComparable<T>
     {
         private static readonly int _defaultCapacity = 100;
         private T[] _array;
@@ -32,7 +32,9 @@ namespace ConsoleApplication1.Heap
         {
             _array = newarray;
             _currentSize = _array.Length;
+            DoubleArray();
         }
+
         public new void Clear()
         {
             _currentSize = 0;
@@ -134,7 +136,7 @@ namespace ConsoleApplication1.Heap
             {
                 result += _array[hole] + ", ";
                 result += PreOrderPrint(hole*2);
-                result += PreOrderPrint(hole*2 + 1);
+                result += PreOrderPrint((hole*2) + 1);
             }
             return result;
         }
@@ -170,18 +172,16 @@ namespace ConsoleApplication1.Heap
         private T IsMaxHeap(int hole)
         {
             T result = _array[hole];
-            if ((hole >= 0) && (hole <= _currentSize/2 -1))
+            if ((hole >= 0) && (hole <= _currentSize/2 - 1))
             {
-
-                if (result.CompareTo(IsMaxHeap(hole * 2)) < 0)
+                if (result.CompareTo(IsMaxHeap(hole*2)) < 0)
                 {
                     result = _array[hole*2];
                 }
                 if (result.CompareTo(IsMaxHeap((hole*2) + 1)) < 0)
                 {
-                    result = _array[(hole * 2) + 1];
+                    result = _array[(hole*2) + 1];
                 }
-
             }
             return result;
         }
@@ -189,6 +189,16 @@ namespace ConsoleApplication1.Heap
         public bool IsComplete()
         {
             return true;
+        }
+
+        private bool IsComplete(int hole)
+        {
+            bool result;
+            if ((hole >= 0) && (hole <= _currentSize/2 - 1))
+            {
+                if (_array[hole*2] != null && hole*2 > _array.Count) 
+            }
+            return result;
         }
     }
 }

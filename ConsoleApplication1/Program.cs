@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ConsoleApplication1.Heap;
 
 
@@ -50,6 +46,7 @@ namespace ConsoleApplication1
              tree2.Insert(2);
              Console.WriteLine(tree2.GeefEenNaKleinsteElement().Element);*/
 
+
             MaxHeap<int> queue = new MaxHeap<int>();
             queue.Add(10);
             queue.Add(100);
@@ -68,16 +65,9 @@ namespace ConsoleApplication1
             int[] ArrayTwo = new int[20];
             ArrayTwo[1] = 15;
             ArrayTwo[2] = 5;
-            ArrayTwo[4] = 3;
-            ArrayTwo[5] = 4;
-            ArrayTwo[3] = 11;
-            ArrayTwo[7] = 7;
-            ArrayTwo[6] = 10;
 
-            queue2.InsertArray(ArrayOne);
-            Console.WriteLine(queue2.IsMaxHeap());
             queue2.InsertArray(ArrayTwo);
-            Console.WriteLine(queue2.IsMaxHeap());
+            Console.WriteLine(queue2.NumberOfNodes());
         }
     }
 }

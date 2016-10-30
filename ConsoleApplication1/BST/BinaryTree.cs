@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApplication1.BST;
 
 namespace ConsoleApplication1
 {

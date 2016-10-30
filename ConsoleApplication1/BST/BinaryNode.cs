@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication1.BST
 {
     public class BinaryNode<T> where T : IComparable
     {

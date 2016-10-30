@@ -1,0 +1,6 @@
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\bin\Debug\Opgave2.exe.config
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\bin\Debug\Opgave2.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\bin\Debug\Opgave2.pdb
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\obj\Debug\Opgave2.exe
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\obj\Debug\Opgave2.pdb
+C:\Users\Gerhard\Dropbox\Windesheim\Algoritmen & Datastructuren\Oefen Tentamen\OefenTentamen\Opgave2\obj\Debug\Opgave2.csprojResolveAssemblyReference.cache
