@@ -1,82 +1,62 @@
 ﻿using System;
-using ConsoleApplication1;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConsoleApplication1.Heap;
 
-namespace AD
+
+namespace ConsoleApplication1
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-//            // Create an unsorted array of string elements
-//            string[] unsorted = {"z", "e", "", "x", "c", "m", "q", "a", "b", "c", "d", "9", "11", "33"};
-//
-//            // Print the unsorted array
-//            for (int i = 0; i < unsorted.Length; i++)
-//            {
-//                Console.Write(unsorted[i] + " ");
-//            }
-//            Console.WriteLine();
-//
-//            // Sort the array
-//            QuickSort.Sort(unsorted, 0, unsorted.Length - 1);
-//            // Print the sorted array
-//            for (int i = 0; i < unsorted.Length; i++)
-//            {
-//                Console.Write(unsorted[i] + " ");
-//            }
-//
-//            Console.WriteLine();
-//
-//            Console.ReadLine();
-//
-//            var tree = new BinaryTree<int>();
-//
-//            tree.Insert(5);
-//            tree.Insert(3);
-//            tree.Insert(7);
-//
-//            tree.InOrderPrint();
-//            Console.WriteLine("----------------");
-//            tree.PreOrderPrint();
-//            Console.WriteLine("----------------");
-//            tree.PostOrderPrint();
-//            var queue = new PriorityQueue {101010, 100, 7, 9, 6};
-//            queue.PreOrderPrint();
-//            queue.remove();
-//            queue.PreOrderPrint();
-//            queue.Add(1);
-//            queue.PreOrderPrint();
-//            queue.Add(102010);
-//
-//            var g = new Graph();
-//
-//            g.AddEdge("Henk", "Tank", 10.1);
-//            g.AddEdge("Piet", "Henk", 1);
-//            g.AddEdge("Adrian", "Piet", 2);
-//            g.AddEdge("Adrian", "Tank", 5);
-//
-//            g.Unweighted("Henk");
-//
-//            AvlTree<int> avlTree = new AvlTree<int>();
-//            avlTree.Add(2);
-//            avlTree.Add(1);
-//            avlTree.Add(0);
-//            avlTree.Add(-1);
-//            avlTree.Add(-2);
-//            avlTree.Add(3);
-//            avlTree.Add(5);
-//            avlTree.Add(4);
-//
-//            avlTree.DisplayTree();
-//
-//            Console.ReadLine();
-//
-            PriorityQueueT<int> queue = new PriorityQueueT<int>();
+            /*Opdracht_1.printLetters(3);
+            Console.ReadLine();
+            Opdracht_1.printLetters(0);
+            Console.ReadLine();
+            Opdracht_1.printLetters2(3, 5);
+            Console.ReadLine();
+            Opdracht_1.printLetters2(0, 2);
+            Console.ReadLine();*/
+
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Insert(6);
+            tree.Insert(8);
+            tree.Insert(2);
+            tree.Insert(4);
+            tree.Insert(1);
+            tree.Insert(3);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+            tree.Remove(1);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+            tree.Remove(2);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+            tree.Remove(3);
+            tree.Remove(4);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+            tree.Insert(7);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+            tree.Remove(7);
+            tree.Remove(8);
+            tree.Insert(20);
+            tree.Insert(30);
+            Console.WriteLine(tree.GeefEenNaKleinsteElement().Element);
+
+            BinaryTree<int> tree2 = new BinaryTree<int>();
+            tree2.Insert(5);
+            Console.WriteLine(tree2.GeefEenNaKleinsteElement().Element);
+            tree2.Insert(2);
+            Console.WriteLine(tree2.GeefEenNaKleinsteElement().Element);
+
+            /*MaxHeap<int> queue = new MaxHeap<int>();
             queue.Add(10);
             queue.Add(100);
             queue.Add(12);
             queue.Add(5);
             queue.PreOrderPrint();
+            queue.PercolateUp(2);*/
         }
     }
 }
